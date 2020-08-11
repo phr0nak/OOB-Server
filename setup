@@ -94,9 +94,6 @@ zone \"${DOMAIN_NAME}\" {
 
     log "IN" "Reloading logrotate to take effect on new Bind9 logs"
     logrotate -d "/etc/logrotate.d/bind"
-
-    log "IN" "Restarting Bind9 service"
-    systemctl restart bind9
 }
 
 function main {
